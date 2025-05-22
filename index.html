@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Online Quiz App</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div class="welcome-screen" id="welcomeScreen">
+            <h1>Online Quiz Challenge</h1>
+            <p>Test your knowledge with this 5-minute quiz. You will have 5 minutes to answer 4 multiple-choice questions. Ready to begin?</p>
+            <button id="startBtn">Start Quiz</button>
+        </div>
+        
+        <!-- Quiz Screen -->
+        <div class="quiz-screen" id="quizScreen">
+            <div class="timer" id="timer">Time Remaining: 5:00</div>
+            <div class="question-info">
+                <div id="questionNumber">Question 1 of 4</div>
+            </div>
+            <div class="question" id="question"></div>
+            <ul class="options" id="options"></ul>
+            <div class="navigation">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+                <button id="submitBtn">Submit Quiz</button>
+            </div>
+        </div>
+        
+        <!-- Results Screen -->
+        <div class="results-screen" id="resultsScreen">
+            <h2>Quiz Results</h2>
+            <div class="score" id="score"></div>
+            <h3>Review Your Answers</h3>
+            <ul class="review-list" id="reviewList"></ul>
+            <button id="restartBtn">Restart Quiz</button>
+        </div>
+    </div>
+</body>
+</html>
